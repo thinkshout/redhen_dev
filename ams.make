@@ -6,9 +6,9 @@ projects[drupal][version] = "7.x"
 
 ; AMS development profile
 projects[ams_dev][type] = "profile"
-projects[ams_dev][download][type] = "file"
-projects[ams_dev][download][url] = "file:///Users/lev/projects/ams/ams_dev.tar.gz"
-projects[ams_dev][download][filename] = "ams_dev.tar.gz"
+projects[ams_dev][download][type] = "git"
+projects[ams_dev][download][url] = "gitolite@code.thinkshout.com:thinkshout/ams/ams_dev.git"
+projects[ams_dev][download][branch] = "master"
 
 ; Standard Contrib Modules
 projects[] = admin_menu
