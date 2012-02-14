@@ -7,7 +7,7 @@ projects[drupal][version] = "7.x"
 ; AMS development profile
 projects[ams_dev][type] = "profile"
 projects[ams_dev][download][type] = "git"
-projects[ams_dev][download][url] = "gitolite@code.thinkshout.com:thinkshout/ams/ams_dev.git"
+projects[ams_dev][download][url] = "gitolite@code.thinkshout.com:ams/ams_dev.git"
 projects[ams_dev][download][branch] = "master"
 
 ; Standard Contrib Modules
@@ -34,5 +34,5 @@ projects[registration][download][branch] = "7.x-1.x"
 ; redhen
 projects[redhen][type] = "module"
 projects[redhen][download][type] = "git"
-projects[redhen][download][url] = "gitolite@code.thinkshout.com:thinkshout/ams/redhen.git"
+projects[redhen][download][url] = "gitolite@code.thinkshout.com:ams/redhen.git"
 projects[redhen][download][branch] = "master"
