@@ -15,5 +15,3 @@ Replacing the placeholders with the proper parameters in your environment.
 * AMS, https://code.thinkshout.com/projects/ams,  is the top level project and contains the make file and build script.
 * The development installation profile, ams\_dev is a subproject of AMS located at https://code.thinkshout.com/projects/ams\_dev.
 * Redhen, is mirrored in an additional subproject of AMS, Redhen, located at https://code.thinkshout.com/projects/redhen.
-
-test change
