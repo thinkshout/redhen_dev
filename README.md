@@ -12,4 +12,5 @@ Replacing the placeholders with the proper parameters in your environment.
 * All other modules will have their latest stable versions pulled.
 
 ## Project repository structure in Chili
-* AMS is the top level project and contains the make file and build script.
+* AMS, https://code.thinkshout.com/projects/ams,  is the top level project and contains the make file and build script.
+* The development installation profile, ams\_dev is a subproject of AMS located at https://code.thinkshout.com/projects/ams\_dev.
