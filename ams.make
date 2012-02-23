@@ -12,7 +12,7 @@ projects[ams_dev][download][branch] = "master"
 
 ; Standard Contrib Modules
 projects[] = admin_menu
-projects[] = ctools
+projects[ctools] = "1.x-dev"
 projects[] = commerce
 projects[] = devel
 projects[] = relation
