@@ -16,7 +16,6 @@ projects[] = "ctools"
 projects[] = commerce
 projects[] = devel
 projects[] = relation
-projects[] = rules
 projects[] = token
 projects[] = views
 
