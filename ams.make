@@ -27,7 +27,7 @@ projects[entity][download][branch] = "7.x-1.x"
 
 projects[registration][type] = "module"
 projects[registration][download][type] = "git"
-projects[registration][download][url] = "git://git.drupal.org/project/registration.git"
+projects[registration][download][url] = "git@git.drupal.org:project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
 
 ; redhen
