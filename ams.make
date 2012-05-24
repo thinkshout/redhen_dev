@@ -18,6 +18,7 @@ projects[] = devel
 projects[] = relation
 projects[] = token
 projects[] = views
+projects[] = entityreference
 
 ; Modules we want to checkout to work on
 projects[entity][type] = "module"
@@ -34,4 +35,4 @@ projects[registration][download][branch] = "7.x-1.x"
 projects[redhen][type] = "module"
 projects[redhen][download][type] = "git"
 projects[redhen][download][url] = "gitolite@code.thinkshout.com:ams/redhen.git"
-projects[redhen][download][branch] = "master"
+projects[redhen][download][branch] = "7.x-1.x"
