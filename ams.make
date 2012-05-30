@@ -44,7 +44,7 @@ projects[salesforce][patch][] = "http://drupal.org/files/salesforce-entityapi-12
 projects[redhen][type] = "module"
 projects[redhen][download][type] = "git"
 projects[redhen][download][url] = "gitolite@code.thinkshout.com:ams/redhen.git"
-projects[redhen][download][branch] = "master"
+projects[redhen][download][branch] = "7.x-1.x"
 
 ; libraries
 libraries[salesforce][download][type] = git
