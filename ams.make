@@ -13,7 +13,6 @@ projects[ams_dev][download][branch] = "master"
 projects[] = admin_menu
 projects[] = ctools
 projects[] = devel
-projects[] = relation
 projects[] = token
 projects[] = views
 projects[] = entityreference
@@ -34,10 +33,15 @@ projects[commerce][download][type] = "git"
 projects[commerce][download][url] = "git@git.drupal.org:project/commerce.git"
 projects[commerce][download][branch] = "7.x-1.x"
 
-projects[salesforce][type] = "module"
-projects[salesforce][download][type] = "git"
-projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
-projects[salesforce][download][branch] = "7.x-2.x"
+projects[relation][type] = "module"
+projects[relation][download][type] = "git"
+projects[relation][download][url] = "git@git.drupal.org:project/relation.git"
+projects[relation][download][branch] = "7.x-1.x"
+
+; projects[salesforce][type] = "module"
+; projects[salesforce][download][type] = "git"
+; projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
+; projects[salesforce][download][branch] = "7.x-2.x"
 
 ; redhen
 projects[redhen][type] = "module"
@@ -46,7 +50,7 @@ projects[redhen][download][url] = "gitolite@code.thinkshout.com:ams/redhen.git"
 projects[redhen][download][branch] = "7.x-1.x"
 
 ; libraries
-libraries[salesforce][download][type] = git
-libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
-libraries[salesforce][directory_name] = "salesforce/toolkit"
-libraries[salesforce][type] = "library"
+; libraries[salesforce][download][type] = git
+; libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
+; libraries[salesforce][directory_name] = "salesforce/toolkit"
+; libraries[salesforce][type] = "library"
