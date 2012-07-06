@@ -49,6 +49,11 @@ projects[redhen][download][type] = "git"
 projects[redhen][download][url] = "gitolite@code.thinkshout.com:ams/redhen.git"
 projects[redhen][download][branch] = "7.x-1.x"
 
+projects[redhen_membership][type] = "module"
+projects[redhen_membership][download][type] = "git"
+projects[redhen_membership][download][url] = "gitolite@code.thinkshout.com:ams/redhen_membership.git"
+projects[redhen_membership][download][branch] = "7.x-1.x"
+
 ; libraries
 ; libraries[salesforce][download][type] = git
 ; libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
