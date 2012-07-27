@@ -54,6 +54,13 @@ projects[redhen_membership][download][type] = "git"
 projects[redhen_membership][download][url] = "gitolite@code.thinkshout.com:ams/redhen_membership.git"
 projects[redhen_membership][download][branch] = "7.x-1.x"
 
+; themes
+projects[] = zen
+projects[poultry][type] = "theme"
+projects[poultry][download][type] = "git"
+projects[poultry][download][url] = "git@git.drupal.org:project/poultry.git"
+projects[poultry][download][branch] = "7.x-1.x"
+
 ; libraries
 ; libraries[salesforce][download][type] = git
 ; libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
