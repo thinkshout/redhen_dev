@@ -1,0 +1,49 @@
+name = AMS Development
+description = Profile for development of Redhen AMS
+core = 7.x
+
+; core
+dependencies[] = block
+dependencies[] = help
+dependencies[] = menu
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = list
+
+; contrib
+dependencies[] = admin_menu
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = token
+dependencies[] = entity
+dependencies[] = relation
+dependencies[] = registration
+dependencies[] = registration_entity_access
+dependencies[] = entityreference
+
+; redhen
+dependencies[] = redhen
+dependencies[] = redhen_contact
+dependencies[] = redhen_org
+dependencies[] = redhen_org_group
+dependencies[] = redhen_relation
+dependencies[] = redhen_membership
+dependencies[] = redhen_note
+dependencies[] = redhen_engagement
+dependencies[] = redhen_registration
+
+; salesforce
+; dependencies[] = salesforce_api
+; dependencies[] = sf_entity
+; dependencies[] = sf_notifications
+; dependencies[] = sf_prematch
+
+files[] = ams_dev.profile
+
+
+; Information added by drush on 2012-08-15
+version = "master-dev"
+project = "ams_dev"
+datestamp = "1345055419"
+
