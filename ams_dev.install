@@ -45,6 +45,9 @@ function ams_dev_install() {
     )
   )));
 
+  // clear caches before creating test data
+  drupal_flush_all_caches();
+
   // create some organizations
   ams_dev_create_orgs(array('company', 'household', 'association', 'group'));
 
@@ -62,9 +65,6 @@ function ams_dev_install() {
 
   // needed because groups use node_access system
   node_access_rebuild(TRUE);
-
-  // salesforce setup
-  // ams_dev_salesforce_setup();
 }
 
 /**
