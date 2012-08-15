@@ -21,6 +21,7 @@ dependencies[] = relation
 dependencies[] = registration
 dependencies[] = registration_entity_access
 dependencies[] = entityreference
+dependencies[] = message
 
 ; redhen
 dependencies[] = redhen
@@ -32,18 +33,6 @@ dependencies[] = redhen_membership
 dependencies[] = redhen_note
 dependencies[] = redhen_engagement
 dependencies[] = redhen_registration
-
-; salesforce
-; dependencies[] = salesforce_api
-; dependencies[] = sf_entity
-; dependencies[] = sf_notifications
-; dependencies[] = sf_prematch
+dependencies[] = redhen_message
 
 files[] = ams_dev.profile
-
-
-; Information added by drush on 2012-08-15
-version = "master-dev"
-project = "ams_dev"
-datestamp = "1345055419"
-
