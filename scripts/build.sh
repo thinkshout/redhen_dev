@@ -4,7 +4,9 @@ set -e
 #
 # Build the distribution using the same process used on Drupal.org
 #
-# Usage: scripts/build.sh [-y] <destination> from the profile main directory.
+# Usage: build.sh [-y] <DESTINATION_PATH> <DB_USER> <DB_PASS> <DB_NAME> from the
+# profile main directory. If any of the db params are excluded, the install
+# profile will not be run, just built.
 #
 
 PROJECT=ams_dev
