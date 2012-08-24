@@ -15,6 +15,7 @@ projects[] = entityreference
 projects[entity][version] = 1.0-rc3
 projects[relation][version] = 1.0-rc3
 projects[message][version] = 1.5
+projects[message][patch][] = "http://drupal.org/files/message-bundle-label.patch"
 
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"
