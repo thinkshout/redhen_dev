@@ -33,6 +33,6 @@ dependencies[] = redhen_membership
 dependencies[] = redhen_note
 dependencies[] = redhen_engagement
 dependencies[] = redhen_registration
-dependencies[] = redhen_message
+dependencies[] = redhen_activity
 
 files[] = ams_dev.profile
