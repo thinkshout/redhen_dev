@@ -65,6 +65,9 @@ function ams_dev_install() {
 
   // needed because groups use node_access system
   node_access_rebuild(TRUE);
+
+  // salesforce setup
+  ams_dev_salesforce_setup();
 }
 
 /**
@@ -273,6 +276,6 @@ function ams_dev_engagement_scores() {
 
 function ams_dev_salesforce_setup() {
   variable_set('salesforce_api_username', 'lev@levelos.com');
-  variable_set('salesforce_api_password', '7gJWFokPvn6VUK');
-  variable_set('salesforce_api_token', 'xA8L7igiDGvEJx7v7qWCd6WQ');
+  variable_set('salesforce_api_password', 'WRjiW6Uvwo2ttP');
+  variable_set('salesforce_api_token', 'HJ9mImph4lJIPWE48ce3BB7E');
 }

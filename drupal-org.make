@@ -50,3 +50,13 @@ projects[poultry][download][type] = "git"
 projects[poultry][download][url] = "git@git.drupal.org:project/poultry.git"
 projects[poultry][download][branch] = "7.x-1.x"
 projects[poultry][subdir] = ""
+
+; salesforce
+projects[salesforce][type] = "module"
+projects[salesforce][download][type] = "git"
+projects[salesforce][download][url] = "git@github.com:thinkshout/salesforce.git"
+projects[salesforce][download][branch] = "7.x-2.x"
+projects[salesforce][subdir] = "salesforce"
+
+libraries[salesforce][download][type] = git
+libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
