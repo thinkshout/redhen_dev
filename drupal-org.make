@@ -55,7 +55,7 @@ projects[poultry][subdir] = ""
 projects[salesforce][type] = "module"
 projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@github.com:thinkshout/salesforce.git"
-projects[salesforce][download][branch] = "7.x-2.x"
+projects[salesforce][download][branch] = "master"
 projects[salesforce][subdir] = "salesforce"
 
 libraries[salesforce][download][type] = git
