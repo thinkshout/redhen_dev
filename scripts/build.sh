@@ -129,4 +129,9 @@ else
   echo "Skipping install profile"
 fi
 
+cd profiles/ams_dev/libraries
+mv salesforce toolkit
+mkdir salesforce
+mv toolkit salesforce
+
 echo "Build script complete."
