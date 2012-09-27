@@ -17,6 +17,7 @@ dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = token
 dependencies[] = entity
+dependencies[] = entity_token
 dependencies[] = relation
 dependencies[] = registration
 dependencies[] = registration_entity_access
