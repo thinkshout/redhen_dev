@@ -274,8 +274,10 @@ function ams_dev_engagement_scores() {
   }
 }
 
+/**
+ * Salesforce setup.
+ */
 function ams_dev_salesforce_setup() {
-  variable_set('salesforce_api_username', 'lev@levelos.com');
-  variable_set('salesforce_api_password', 'WRjiW6Uvwo2ttP');
-  variable_set('salesforce_api_token', 'HJ9mImph4lJIPWE48ce3BB7E');
+  variable_set('salesforce_consumer_key', '3MVG9yZ.WNe6byQC3METjuPMZE3WAccPtT7ythFkEY3D8OlaRg7HmDL98zACwJBX7iYP9AGNpuzD2rHt0RAoD');
+  variable_set('salesforce_consumer_secret', '7241637589953999446');
 }

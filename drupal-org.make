@@ -59,6 +59,3 @@ projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@github.com:thinkshout/salesforce.git"
 projects[salesforce][download][branch] = "master"
 projects[salesforce][subdir] = "salesforce"
-
-libraries[salesforce][download][type] = git
-libraries[salesforce][download][url] = git://github.com/developerforce/Force.com-Toolkit-for-PHP
