@@ -38,5 +38,6 @@ dependencies[] = redhen_activity
 
 ; salesforce
 dependencies[] = salesforce
+dependencies[] = salesforce_mapping
 
 files[] = ams_dev.profile
