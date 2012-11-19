@@ -38,7 +38,9 @@ dependencies[] = redhen_registration
 dependencies[] = redhen_activity
 
 ; salesforce
-dependencies[] = salesforce
 dependencies[] = salesforce_mapping
+dependencies[] = salesforce_push
+dependencies[] = salesforce_pull
+dependencies[] = salesforce_soap
 
 files[] = ams_dev.profile
