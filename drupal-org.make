@@ -59,3 +59,9 @@ projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
 projects[salesforce][download][branch] = "7.x-3.x"
 projects[salesforce][subdir] = "salesforce"
+
+; PHP ToolKit
+libraries[salesforce][download][type] = "git"
+libraries[salesforce][download][url] = "git://github.com/developerforce/Force.com-Toolkit-for-PHP"
+libraries[salesforce][directory_name] = "salesforce"
+libraries[salesforce][destination] = "libraries"
