@@ -11,6 +11,7 @@ projects[] = devel
 projects[] = token
 projects[] = views
 projects[] = entityreference
+projects[] = libraries
 
 projects[entity][version] = 1.0-rc3
 projects[relation][version] = 1.0-rc3
