@@ -9,7 +9,7 @@ set -e
 # profile will not be run, just built.
 #
 
-PROJECT=ams_dev
+PROJECT=redhen_dev
 
 confirm () {
   read -r -p "${1:-Are you sure? [Y/n]} " response
@@ -124,7 +124,7 @@ mv $TEMP_BUILD $DESTINATION
 if [ $DBUSER  ] && [ $DBPASS ] && [ $DB ] ; then
   cd $DESTINATION
   echo "Running install profile"
-  drush si ams_dev --db-url=mysql://$DBUSER:$DBPASS@localhost/$DB -y
+  drush si $PROJECT --db-url=mysql://$DBUSER:$DBPASS@localhost/$DB -y
 else
   echo "Skipping install profile"
 fi
