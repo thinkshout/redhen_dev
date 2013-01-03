@@ -1,5 +1,5 @@
-name = AMS Development
-description = Profile for development of Redhen AMS
+name = RedHen Development
+description = Profile for development of RedHen CRM
 core = 7.x
 
 ; core
@@ -43,4 +43,4 @@ dependencies[] = salesforce_push
 dependencies[] = salesforce_pull
 dependencies[] = salesforce_soap
 
-files[] = ams_dev.profile
+files[] = redhen_dev.profile

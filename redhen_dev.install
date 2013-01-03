@@ -10,7 +10,7 @@ module_load_include('inc', 'devel_generate');
 /**
  * Implements hook_install().
  */
-function ams_dev_install() {
+function redhen_dev_install() {
   include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
 
   // Enable the admin theme.
@@ -29,7 +29,7 @@ function ams_dev_install() {
   variable_set('redhen_contact_connect_users', TRUE);
 
   //create Note type terms
-  ams_dev_create_note_type_terms();
+  redhen_dev_create_note_type_terms();
 
   // create base types
   redhen_create_type('redhen_contact_type', 'Staff', 'staff');
@@ -49,25 +49,25 @@ function ams_dev_install() {
   drupal_flush_all_caches();
 
   // create some organizations
-  ams_dev_create_orgs(array('company', 'household', 'association', 'group'));
+  redhen_dev_create_orgs(array('company', 'household', 'association', 'group'));
 
   // create some contacts
-  ams_dev_create_contacts(array('staff', 'management'));
+  redhen_dev_create_contacts(array('staff', 'management'));
 
   // membership setup
-  ams_dev_membership_setup();
+  redhen_dev_membership_setup();
 
   // setup registrations
-  ams_dev_registration_setup();
+  redhen_dev_registration_setup();
 
   // setup some enagagement scores
-  ams_dev_engagement_scores();
+  redhen_dev_engagement_scores();
 
   // needed because groups use node_access system
   node_access_rebuild(TRUE);
 
   // salesforce setup
-  ams_dev_salesforce_setup();
+  redhen_dev_salesforce_setup();
 }
 
 /**
@@ -78,7 +78,7 @@ function ams_dev_install() {
  *
  * @param int $number
  */
-function ams_dev_create_contacts($bundles, $number = 100) {
+function redhen_dev_create_contacts($bundles, $number = 100) {
   for($i=0; $i<$number; $i++) {
     $bundle = $bundles[mt_rand(0, count($bundles)-1)];
     $contact = new RedhenContact(array(
@@ -114,7 +114,7 @@ function ams_dev_create_contacts($bundles, $number = 100) {
  *
  * @param int $number
  */
-function ams_dev_create_orgs($bundles, $number = 50) {
+function redhen_dev_create_orgs($bundles, $number = 50) {
   for($i=0; $i < $number; $i++) {
     $bundle = $bundles[mt_rand(0, count($bundles)-1)];
     $org = new RedhenOrg(array(
@@ -154,7 +154,7 @@ function redhen_create_type($type, $label, $bundle, $values = array()) {
 /*
  * Create note type terms
  */
-function ams_dev_create_note_type_terms() {
+function redhen_dev_create_note_type_terms() {
   $note_type_taxonomy = taxonomy_vocabulary_machine_name_load('note_type');
 
   $terms = array('Phone call', 'Email', 'Letter', 'Conversation');
@@ -170,7 +170,7 @@ function ams_dev_create_note_type_terms() {
 /**
  * Setup redhen registration stuff.
  */
-function ams_dev_registration_setup() {
+function redhen_dev_registration_setup() {
   registration_type_save(new RegistrationType(array(
     'name' => 'registration_type_1',
     'label' => 'Registration Type 1'
@@ -229,7 +229,7 @@ function ams_dev_registration_setup() {
 /**
  * Setup membership types and roles
  */
-function ams_dev_membership_setup() {
+function redhen_dev_membership_setup() {
   $role_name = 'Premium';
   $role = new stdClass();
   $role->name = $role_name;
@@ -252,7 +252,7 @@ function ams_dev_membership_setup() {
 /**
  * Setup some engagement scores.
  */
-function ams_dev_engagement_scores() {
+function redhen_dev_engagement_scores() {
   $score = new RedhenEngagementScore(array(
     'label' => 'Engagement Score 1',
     'score' => 10,
@@ -277,7 +277,7 @@ function ams_dev_engagement_scores() {
 /**
  * Salesforce setup.
  */
-function ams_dev_salesforce_setup() {
+function redhen_dev_salesforce_setup() {
   variable_set('salesforce_consumer_key', '3MVG9yZ.WNe6byQC3METjuPMZE3WAccPtT7ythFkEY3D8OlaRg7HmDL98zACwJBX7iYP9AGNpuzD2rHt0RAoD');
   variable_set('salesforce_consumer_secret', '7241637589953999446');
 }
