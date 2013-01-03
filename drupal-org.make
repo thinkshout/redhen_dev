@@ -17,8 +17,6 @@ projects[relation][version] = 1.0-rc3
 projects[message][version] = 1.7
 projects[libraries][version] = 2.0
 
-; projects[message][patch][] = "http://drupal.org/files/message-bundle-label.patch"
-
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"
 projects[registration][download][type] = "git"
