@@ -42,7 +42,7 @@ projects[redhen_membership][download][branch] = "7.x-1.x"
 projects[redhen_membership][subdir] = "redhen"
 
 ; themes
-projects[zen][version] = 5.1
+projects[zen][version] = 5.x-dev
 projects[zen][subdir] = ""
 
 projects[poultry][type] = "theme"

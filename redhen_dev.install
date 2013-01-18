@@ -224,6 +224,18 @@ function redhen_dev_registration_setup() {
   $node->uid = 1;
   $node->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'registration_type_1';
   node_save($node);
+
+  $settings = array(
+    'status' => TRUE,
+    'capacity' => 0,
+    'send_reminder' => 0,
+    'settings' => serialize(array(
+      'from_address' => 'info@thinkshout.com'
+    )),
+    'open' => NULL,
+    'close' => NULL,
+  );
+  registration_update_entity_settings('node', $node->nid, $settings);
 }
 
 /**

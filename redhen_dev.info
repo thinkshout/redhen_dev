@@ -20,6 +20,7 @@ dependencies[] = entity
 dependencies[] = entity_token
 dependencies[] = relation
 dependencies[] = registration
+dependencies[] = registration_waitlist
 dependencies[] = registration_entity_access
 dependencies[] = entityreference
 dependencies[] = message
@@ -42,5 +43,8 @@ dependencies[] = salesforce_mapping
 dependencies[] = salesforce_push
 dependencies[] = salesforce_pull
 dependencies[] = salesforce_soap
+
+; themes
+dependencies[] = zen
 
 files[] = redhen_dev.profile
