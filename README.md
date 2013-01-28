@@ -1,4 +1,4 @@
-This project contains a Drush make file and build script for developing Redhen, a native Drupal CRM.
+This project contains a Drush make file and build script for developing RedHen, a native Drupal CRM.
 
 ## Installation
 Simply run
