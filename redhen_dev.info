@@ -25,6 +25,9 @@ dependencies[] = registration_entity_access
 dependencies[] = entityreference
 dependencies[] = message
 dependencies[] = libraries
+dependencies[] = coder
+dependencies[] = coder_review
+dependencies[] = coder_sniffer
 
 ; redhen
 dependencies[] = redhen
