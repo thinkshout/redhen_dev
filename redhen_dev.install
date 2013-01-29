@@ -84,6 +84,7 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
     $contact = new RedhenContact(array(
       'type' => $bundle,
       'first_name' => devel_generate_word(mt_rand(3, 10)),
+      'middle_name' => $i % 2 ? '' : devel_generate_word(mt_rand(3, 6)),
       'last_name' => devel_generate_word(mt_rand(5, 20))
     ));
     $contact->setEmail(
