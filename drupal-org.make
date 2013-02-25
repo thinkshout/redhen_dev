@@ -10,13 +10,14 @@ projects[] = ctools
 projects[] = devel
 projects[] = token
 projects[] = views
+projects[] = rules
 projects[] = entityreference
+projects[] = coder
 
 projects[entity][version] = 1.0
-projects[relation][version] = 1.0-rc3
+projects[relation][version] = 1.0-rc4
 projects[message][version] = 1.7
 projects[libraries][version] = 2.0
-projects[] = coder
 
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"

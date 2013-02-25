@@ -27,6 +27,10 @@ dependencies[] = message
 dependencies[] = libraries
 dependencies[] = coder
 dependencies[] = coder_review
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = rules
+dependencies[] = rules_admin
 
 ; redhen
 dependencies[] = redhen
