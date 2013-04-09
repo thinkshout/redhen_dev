@@ -17,7 +17,7 @@ projects[] = coder
 projects[entity][version] = 1.0
 projects[relation][version] = 1.0-rc4
 projects[message][version] = 1.7
-projects[libraries][version] = 2.0
+projects[libraries][version] = 2.1
 
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"
@@ -27,7 +27,7 @@ projects[registration][download][branch] = "7.x-1.x"
 
 ; projects[commerce][type] = "module"
 ; projects[commerce][download][type] = "git"
-; projects[commerce][download][url] = "git@git.drupal.org:project/commerce.git"
+; projects[commerce][download][url] = "git@git.drupal.or2.1g:project/commerce.git"
 ; projects[commerce][download][branch] = "7.x-1.x"
 
 ; redhen
