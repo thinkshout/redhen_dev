@@ -14,7 +14,7 @@ projects[] = rules
 projects[] = entityreference
 projects[] = coder
 
-projects[entity][version] = 1.0
+projects[entity][version] = 1.1
 projects[relation][version] = 1.0-rc4
 projects[message][version] = 1.7
 projects[libraries][version] = 2.1
