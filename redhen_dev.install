@@ -81,13 +81,16 @@ function redhen_dev_install() {
 function redhen_dev_create_contacts($bundles, $number = 100) {
   for($i=0; $i<$number; $i++) {
     $bundle = $bundles[mt_rand(0, count($bundles)-1)];
-    $first_name = random_data_first_name();
-    $contact = new RedhenContact(array(
-      'type' => $bundle,
-      'first_name' => $first_name,
-      'middle_name' => $i % 2 ? '' : random_data_first_name(),
-      'last_name' => random_data_last_name()
-    ));
+    if ($i == 0 || !($i % 3 == 0)) {
+      $first_name = random_data_first_name();
+      $contact_values = array(
+        'type' => $bundle,
+        'first_name' => $first_name,
+        'middle_name' => $i % 2 ? '' : random_data_first_name(),
+        'last_name' => random_data_last_name()
+      );
+    }
+    $contact = new RedhenContact($contact_values);
     $contact->setEmail(
       strtolower($first_name) . '@' . devel_generate_word(mt_rand(5, 20)) . '.com'
     );
