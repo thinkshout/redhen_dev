@@ -119,6 +119,7 @@ function redhen_dev_create_orgs() {
     $bundle = $organization['type'];
     if ($bundle == 'foundation' || $bundle == 'shelter') {
       $org = new RedhenOrg(array(
+        'name' => redhen_org_machine_name($organization['name']),
         'type' => $bundle,
         'label' => $organization['name'],
       ));
