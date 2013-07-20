@@ -87,7 +87,8 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
         'type' => $bundle,
         'first_name' => $first_name,
         'middle_name' => $i % 2 ? '' : random_data_first_name(),
-        'last_name' => random_data_last_name()
+        'last_name' => random_data_last_name(),
+        'author_uid' => 1,
       );
     }
     $contact = new RedhenContact($contact_values);
