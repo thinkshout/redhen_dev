@@ -12,6 +12,23 @@ function redhen_demo_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_node_info().
+ */
+function redhen_demo_node_info() {
+  $items = array(
+    'event' => array(
+      'name' => t('Event'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implements hook_default_redhen_contact_type().
  */
 function redhen_demo_default_redhen_contact_type() {
@@ -95,10 +112,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "a_horse_is_a_horse_of_course_ad",
-    "revision_id" : "11",
+    "revision_id" : "71",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -108,10 +125,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "bark_if_you_love_cats",
-    "revision_id" : "12",
+    "revision_id" : "72",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -121,10 +138,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "foundation",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "cat_people_care",
-    "revision_id" : "13",
+    "revision_id" : "73",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -134,10 +151,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "crouching_tigers_need_a_home",
-    "revision_id" : "14",
+    "revision_id" : "74",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -147,10 +164,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "fish_have_feelings_too",
-    "revision_id" : "15",
+    "revision_id" : "75",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -160,10 +177,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "lucky_critters_shelter",
-    "revision_id" : "16",
+    "revision_id" : "76",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -173,10 +190,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "foundation",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "nyc_cares_about_pets",
-    "revision_id" : "17",
+    "revision_id" : "77",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -186,10 +203,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "foundation",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "oregon_foundation_for_animal_sh",
-    "revision_id" : "18",
+    "revision_id" : "78",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -199,10 +216,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "shelter",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "rose_city_squirrel_shelter",
-    "revision_id" : "19",
+    "revision_id" : "79",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -212,10 +229,10 @@ function redhen_demo_default_redhen_org() {
     "author_uid" : "0",
     "redhen_state" : "1",
     "type" : "foundation",
-    "created" : "1375901337",
-    "updated" : "1375988099",
+    "created" : "1375995367",
+    "updated" : "1375995367",
     "name" : "society_for_the_ethical_treatme",
-    "revision_id" : "20",
+    "revision_id" : "80",
     "log" : null,
     "default_revision" : "1"
   }');
@@ -254,6 +271,21 @@ function redhen_demo_default_redhen_org_type() {
   $items['shelter'] = entity_import('redhen_org_type', '{
     "name" : "shelter",
     "label" : "Shelter",
+    "locked" : "0",
+    "weight" : "0",
+    "data" : null
+  }');
+  return $items;
+}
+
+/**
+ * Implements hook_default_registration_type().
+ */
+function redhen_demo_default_registration_type() {
+  $items = array();
+  $items['demo_registration'] = entity_import('registration_type', '{
+    "name" : "demo_registration",
+    "label" : "Demo registration",
     "locked" : "0",
     "weight" : "0",
     "data" : null
