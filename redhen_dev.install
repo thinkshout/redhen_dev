@@ -77,9 +77,10 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
       strtolower($first_name) . '@' . devel_generate_word(mt_rand(5, 20)) . '.com'
     );
 
-    if (isset($contact->field_address)) {
+    if (field_info_instance('redhen_contact', 'field_address', $bundle)) {
       $contact->field_address[LANGUAGE_NONE][0] = _addressfield_devel_generate(NULL, NULL, NULL, NULL);
     }
+
     $contact->save();
 
     if ($i >= 0 and $i <10) {
