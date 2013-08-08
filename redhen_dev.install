@@ -31,35 +31,14 @@ function redhen_dev_install() {
   //create Note type terms
   redhen_dev_create_note_type_terms();
 
-//  // create base types
-//  redhen_create_type('redhen_contact_type', 'Staff', 'staff');
-//  redhen_create_type('redhen_contact_type', 'Management', 'management');
-//  redhen_create_type('redhen_contact_type', 'Volunteer', 'volunteer');
-//  redhen_create_type('redhen_org_type', 'Shelter', 'shelter');
-//  redhen_create_type('redhen_org_type', 'Foundation', 'foundation');
-//  redhen_create_type('redhen_org_type', 'Business', 'business');
-//  redhen_create_type('redhen_org_type', 'Group', 'group', array('data' => array(
-//    'group' => 1,
-//    'group_settings' => array(
-//      'private' => 1,
-//      'content_types' => array('post' => 'post')
-//    )
-//  )));
-
   // clear caches before creating test data
   drupal_flush_all_caches();
-
-  // setup some enagagement scores
-//  redhen_dev_create_engagement_scores();
 
   // create some organizations
   redhen_dev_create_orgs();
 
   // create some contacts
   redhen_dev_create_contacts(array('staff', 'management', 'volunteer'));
-
-  // membership setup
-//  redhen_dev_membership_setup();
 
   // setup registrations
   redhen_dev_registration_setup();
@@ -116,7 +95,7 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
     }
 
     $scores = redhen_dev_test_engagement_scores();
-    $num_scores = mt_rand(0, 100);
+    $num_scores = mt_rand(0, 10);
     for ($s = 0; $s < $num_scores; $s++) {
       $engagement = redhen_engagement_create(
         array_rand($scores),
@@ -162,21 +141,6 @@ function redhen_dev_create_orgs() {
   }
 }
 
-/**
- * Create a simple bundle/type
- *
- * @param $type
- * @param $label
- * @param $bundle
- * @param array $values
- */
-function redhen_create_type($type, $label, $bundle, $values = array()) {
-  $contact_type = entity_create($type, $values);
-  $contact_type->label = $label;
-  $contact_type->name = $bundle;
-  $contact_type->save();
-}
-
 /*
  * Create note type terms
  */
@@ -197,116 +161,21 @@ function redhen_dev_create_note_type_terms() {
  * Setup redhen registration stuff.
  */
 function redhen_dev_registration_setup() {
-  registration_type_save(new RegistrationType(array(
-    'name' => 'registration_type_1',
-    'label' => 'Registration Type 1'
-  )));
-
-  // create event content type
-  $types = array(
-    array(
-      'type' => 'event',
-      'name' => st('Event'),
-      'base' => 'node_content',
-      'description' => st("An event that you can register for."),
-      'custom' => 1,
-      'modified' => 1,
-      'locked' => 0,
-    ),
-    array(
-      'type' => 'post',
-      'name' => st('Post'),
-      'base' => 'node_content',
-      'description' => st("Content posted into a group."),
-      'custom' => 1,
-      'modified' => 1,
-      'locked' => 0,
-    ),
-  );
-
-  foreach ($types as $type) {
-    $type = node_type_set_defaults($type);
-    node_type_save($type);
-    node_add_body_field($type);
-  }
-
-  field_create_field(array(
-    'field_name' => 'field_registration',
-    'type' => 'registration'
-  ));
-
-  field_create_instance(array(
-    'field_name' => 'field_registration',
-    'entity_type' => 'node',
-    'bundle' => 'event',
-    'label' => 'Registration'
-  ));
-
   $node = new stdClass();
   $node->type = 'event';
   node_object_prepare($node);
   $node->title = 'Test Event';
   $node->body = devel_create_content();
   $node->uid = 1;
-  $node->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'registration_type_1';
+  $node->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'demo_registration';
   node_save($node);
-
-  $settings = array(
-    'status' => TRUE,
-    'capacity' => 0,
-    'send_reminder' => 0,
-    'settings' => serialize(array(
-      'from_address' => 'info@thinkshout.com'
-    )),
-    'open' => NULL,
-    'close' => NULL,
-  );
-  registration_update_entity_settings('node', $node->nid, $settings);
 }
-
-/**
- * Setup membership types and roles
- */
-function redhen_dev_membership_setup() {
-  $role_name = 'Premium';
-  $role = new stdClass();
-  $role->name = $role_name;
-  user_role_save($role);
-  $premium_role_id = user_role_load_by_name($role_name)->rid;
-
-  // create some membership types
-  $membership_type = entity_create('redhen_membership_type', array());
-  $membership_type->label = 'Standard';
-  $membership_type->name = 'standard';
-  $membership_type->save();
-
-  $membership_type = entity_create('redhen_membership_type', array());
-  $membership_type->label = 'Premium';
-  $membership_type->name = 'premium';
-  $membership_type->role_id = $premium_role_id;
-  $membership_type->save();
-}
-
 
 function redhen_dev_test_engagement_scores() {
   return array(
     'event_registration' => 'Event registration',
     'comment' => 'Comment',
   );
-}
-
-/**
- * Setup some engagement scores.
- */
-function redhen_dev_create_engagement_scores() {
-  foreach (redhen_dev_test_engagement_scores() as $name => $label) {
-    $score = new RedhenEngagementScore(array(
-      'label' => $label,
-      'score' => mt_rand(10, 100),
-      'name' => $name,
-    ));
-    $score->save();
-  }
 }
 
 /**
@@ -674,7 +543,6 @@ function random_data_last_name() {
  * Helper function for pulling random organizations.
  */
 function random_data_organization() {
-
   $organizations = random_data_get_all_orgs();
   $org = array_rand($organizations, 1);
   return $organizations[$org];
