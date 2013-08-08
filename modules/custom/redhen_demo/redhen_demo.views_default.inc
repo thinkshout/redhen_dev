@@ -33,7 +33,7 @@ function redhen_demo_views_default_views() {
   $handler->display->display_options['style_options']['data_source'] = 'field_coordinates';
   $handler->display->display_options['style_options']['name_field'] = 'full_name';
   $handler->display->display_options['style_options']['description_field'] = 'full_name';
-  $handler->display->display_options['style_options']['map'] = 'google-roadmap';
+  $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
   $handler->display->display_options['style_options']['icon'] = array(
     'iconUrl' => '',
     'shadowUrl' => '',
