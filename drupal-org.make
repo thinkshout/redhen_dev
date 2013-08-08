@@ -75,7 +75,7 @@ libraries[leaflet][directory_name] = "leaflet"
 libraries[leaflet][destination] = "libraries"
 
 ; leaflet markercluster
-libraries[leaflet_markercluster][download][type] = "git"
+libraries[leaflet_markercluster][download][type] = "get"
 libraries[leaflet_markercluster][download][url] = "https://github.com/Leaflet/Leaflet.markercluster/archive/b128e950d8f5d7da5b60bd0aa9a88f6d3dd17c98.zip"
 libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
 libraries[leaflet_markercluster][destination] = "libraries"
