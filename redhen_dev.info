@@ -13,10 +13,13 @@ dependencies[] = list
 
 ; contrib
 dependencies[] = admin_menu
+dependencies[] = addressfield
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = token
 dependencies[] = entity
+dependencies[] = entitycache
+dependencies[] = entityreference
 dependencies[] = entity_token
 dependencies[] = relation
 dependencies[] = registration
@@ -24,9 +27,10 @@ dependencies[] = registration_waitlist
 dependencies[] = registration_entity_access
 dependencies[] = entityreference
 dependencies[] = message
+dependencies[] = leaflet
+dependencies[] = leaflet_views
+dependencies[] = leaflet_markercluster
 dependencies[] = libraries
-dependencies[] = coder
-dependencies[] = coder_review
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = rules
@@ -49,5 +53,8 @@ dependencies[] = salesforce_mapping
 dependencies[] = salesforce_push
 dependencies[] = salesforce_pull
 dependencies[] = salesforce_soap
+
+; features
+dependencies[] = redhen_demo
 
 files[] = redhen_dev.profile

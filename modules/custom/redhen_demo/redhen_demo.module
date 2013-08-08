@@ -1,0 +1,11 @@
+<?php
+/**
+ * @file
+ * Code for the redhen_demo feature.
+ */
+
+include_once 'redhen_demo.features.inc';
+
+function redhen_demo_leaflet_map_info() {
+
+}

@@ -5,14 +5,21 @@ core = 7.x
 defaults[projects][subdir] = "contrib"
 
 ; Standard Contrib Modules
+projects[] = addressfield
 projects[] = admin_menu
 projects[] = ctools
 projects[] = devel
+projects[] = entitycache
+projects[] = entityreference
+projects[] = features
+projects[] = geocoder
+projects[] = geofield
+projects[] = geophp
+projects[] = leaflet
+projects[] = leaflet_markercluster
 projects[] = token
 projects[] = views
 projects[] = rules
-projects[] = entityreference
-projects[] = coder
 
 projects[entity][version] = 1.1
 projects[relation][version] = 1.0-rc4
@@ -24,11 +31,6 @@ projects[registration][type] = "module"
 projects[registration][download][type] = "git"
 projects[registration][download][url] = "git@git.drupal.org:project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
-
-; projects[commerce][type] = "module"
-; projects[commerce][download][type] = "git"
-; projects[commerce][download][url] = "git@git.drupal.or2.1g:project/commerce.git"
-; projects[commerce][download][branch] = "7.x-1.x"
 
 ; redhen
 projects[redhen][type] = "module"
@@ -65,3 +67,15 @@ libraries[salesforce][download][type] = "git"
 libraries[salesforce][download][url] = "git://github.com/developerforce/Force.com-Toolkit-for-PHP"
 libraries[salesforce][directory_name] = "salesforce"
 libraries[salesforce][destination] = "libraries"
+
+; Leaflet
+libraries[leaflet][download][type] = "get"
+libraries[leaflet][download][url] = "https://github.com/Leaflet/Leaflet/archive/v0.5.tar.gz"
+libraries[leaflet][directory_name] = "leaflet"
+libraries[leaflet][destination] = "libraries"
+
+; leaflet markercluster
+libraries[leaflet_markercluster][download][type] = "git"
+libraries[leaflet_markercluster][download][url] = "https://github.com/danzel/Leaflet.markercluster.git"
+libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
+libraries[leaflet_markercluster][destination] = "libraries"
