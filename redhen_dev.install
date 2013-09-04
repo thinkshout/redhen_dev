@@ -25,43 +25,30 @@ function redhen_dev_install() {
 
   minimal_install();
 
-  // misc variables
   variable_set('redhen_contact_connect_users', TRUE);
 
-  //create Note type terms
   redhen_dev_create_note_type_terms();
 
-  // clear caches before creating test data
   drupal_flush_all_caches();
 
-  // create some organizations
   redhen_dev_create_orgs();
 
-  // create some contacts
   redhen_dev_create_contacts(array('staff', 'management', 'volunteer'));
 
-  // setup registrations
   redhen_dev_registration_setup();
 
-  // needed because groups use node_access system
   node_access_rebuild(TRUE);
 
-  // salesforce setup
   redhen_dev_salesforce_setup();
 }
 
 /**
- * Helper to create contacts
- *
- * @param $bundles
- *   Random bundle will be chosen
- *
- * @param int $number
+ * Helper to create contacts.
  */
 function redhen_dev_create_contacts($bundles, $number = 100) {
   module_load_include('inc', 'addressfield', 'addressfield.devel_generate');
-  for($i=0; $i<$number; $i++) {
-    $bundle = $bundles[mt_rand(0, count($bundles)-1)];
+  for ($i = 0; $i < $number; $i++) {
+    $bundle = $bundles[mt_rand(0, count($bundles) - 1)];
     if ($i == 0 || !($i % 3 == 0)) {
       $first_name = random_data_first_name();
       $contact_values = array(
@@ -83,7 +70,7 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
 
     $contact->save();
 
-    if ($i >= 0 and $i <10) {
+    if ($i >= 0 and $i < 10) {
       $note = new RedhenNote(array(
         'type' => 'redhen_note',
         'entity_type' => 'redhen_contact',
@@ -91,7 +78,7 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
         'author_uid' => 1,
       ));
       $note->redhen_note_body[LANGUAGE_NONE][0]['value'] = devel_generate_word(mt_rand(5, 20));
-      $note->redhen_note_type[LANGUAGE_NONE][0]['tid'] = rand(1,2);
+      $note->redhen_note_type[LANGUAGE_NONE][0]['tid'] = rand(1, 2);
       $note->save();
     }
 
@@ -112,12 +99,7 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
 }
 
 /**
- * Helper to create orgs
- *
- * @param $bundles
- *   Random bundle will be chosen
- *
- * @param int $number
+ * Helper to create orgs.
  */
 function redhen_dev_create_orgs() {
   foreach (random_data_get_all_orgs() as $organization) {
@@ -136,14 +118,14 @@ function redhen_dev_create_orgs() {
         'author_uid' => 1,
       ));
       $note->redhen_note_body[LANGUAGE_NONE][0]['value'] = devel_generate_word(mt_rand(5, 20));
-      $note->redhen_note_type[LANGUAGE_NONE][0]['tid'] = rand(1,3);
+      $note->redhen_note_type[LANGUAGE_NONE][0]['tid'] = rand(1, 3);
       $note->save();
     }
   }
 }
 
-/*
- * Create note type terms
+/**
+ * Create note type terms.
  */
 function redhen_dev_create_note_type_terms() {
   $note_type_taxonomy = taxonomy_vocabulary_machine_name_load('note_type');
@@ -172,6 +154,9 @@ function redhen_dev_registration_setup() {
   node_save($node);
 }
 
+/**
+ * Return engagement scores used in this demo.
+ */
 function redhen_dev_test_engagement_scores() {
   return array(
     'event_registration' => 'Event registration',
@@ -188,7 +173,7 @@ function redhen_dev_salesforce_setup() {
 }
 
 /**
- * Helper function for pulling a random first name
+ * Helper function for pulling a random first name.
  */
 function random_data_first_name() {
 
@@ -400,7 +385,7 @@ function random_data_first_name() {
 }
 
 /**
- * Helper function for pulling a random first name
+ * Helper function for pulling a random first name.
  */
 function random_data_last_name() {
 
