@@ -21,9 +21,9 @@ projects[] = token
 projects[] = views
 projects[] = rules
 
-projects[entity][version] = 1.1
+projects[entity][version] = 1.2
 projects[relation][version] = 1.0-rc4
-projects[message][version] = 1.8
+projects[message][version] = 1.9
 projects[libraries][version] = 2.1
 
 ; Modules we want to checkout to work on
@@ -46,7 +46,7 @@ projects[redhen_membership][download][branch] = "7.x-1.x"
 projects[redhen_membership][subdir] = "redhen"
 
 ; themes
-projects[zen][version] = 5.x-dev
+projects[zen][version] = 5.4
 projects[zen][subdir] = ""
 
 projects[poultry][type] = "theme"
