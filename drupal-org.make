@@ -12,12 +12,12 @@ projects[] = token
 projects[] = views
 projects[] = rules
 projects[] = entityreference
-projects[] = coder
+projects[] = features
 
-projects[entity][version] = 1.1
+projects[entity][version] = 1.3
 projects[relation][version] = 1.0-rc4
-projects[message][version] = 1.8
-projects[libraries][version] = 2.1
+projects[message][version] = 1.9
+projects[libraries][version] = 2.2
 
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"
@@ -57,7 +57,7 @@ projects[poultry][subdir] = ""
 projects[salesforce][type] = "module"
 projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
-projects[salesforce][download][branch] = "7.x-3.x"
+projects[salesforce][download][branch] = "7.x-3.0-beta5-release-prep"
 projects[salesforce][subdir] = "salesforce"
 
 ; PHP ToolKit
