@@ -21,10 +21,10 @@ projects[] = token
 projects[] = views
 projects[] = rules
 
-projects[entity][version] = 1.2
+projects[entity][version] = 1.3
 projects[relation][version] = 1.0-rc4
 projects[message][version] = 1.9
-projects[libraries][version] = 2.1
+projects[libraries][version] = 2.2
 
 ; Modules we want to checkout to work on
 projects[registration][type] = "module"
@@ -70,12 +70,12 @@ libraries[salesforce][destination] = "libraries"
 
 ; Leaflet
 libraries[leaflet][download][type] = "get"
-libraries[leaflet][download][url] = "https://github.com/Leaflet/Leaflet/archive/v0.5.tar.gz"
+libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.1.zip"
 libraries[leaflet][directory_name] = "leaflet"
 libraries[leaflet][destination] = "libraries"
 
 ; leaflet markercluster
 libraries[leaflet_markercluster][download][type] = "get"
-libraries[leaflet_markercluster][download][url] = "https://github.com/Leaflet/Leaflet.markercluster/archive/b128e950d8f5d7da5b60bd0aa9a88f6d3dd17c98.zip"
+libraries[leaflet_markercluster][download][url] = "https://github.com/Leaflet/Leaflet.markercluster/archive/v0.4.0.tar.gz"
 libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
 libraries[leaflet_markercluster][destination] = "libraries"
