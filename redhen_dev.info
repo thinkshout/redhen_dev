@@ -12,7 +12,6 @@ dependencies[] = field_ui
 dependencies[] = list
 
 ; contrib
-dependencies[] = admin_menu
 dependencies[] = addressfield
 dependencies[] = devel
 dependencies[] = devel_generate
@@ -67,13 +66,13 @@ dependencies[] = ember_support
 dependencies[] = escape_admin
 dependencies[] = fape
 dependencies[] = focal_point
-dependencies[] = gripbuilder
+dependencies[] = gridbuilder
 dependencies[] = iib
 dependencies[] = json2
 dependencies[] = manualcrop
 dependencies[] = module_filter
 dependencies[] = picture
-dependencies[] = purr_message
+dependencies[] = purr_messages
 dependencies[] = responsive_preview
 dependencies[] = views_bulk_operations
 
