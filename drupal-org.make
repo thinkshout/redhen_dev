@@ -200,20 +200,6 @@ projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-but
 projects[edit][patch][2015295-6] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
 projects[edit][patch][2015295-22] = "http://drupal.org/files/issues/edit-views-pseudo-fields-title-2015295-22.patch"
 
-projects[file_entity][version] = "2.x-dev"
-projects[file_entity][type] = "module"
-projects[file_entity][subdir] = "contrib"
-projects[file_entity][download][type] = "git"
-projects[file_entity][download][revision] = "3661d8b"
-projects[file_entity][download][branch] = "7.x-2.x"
-; Default file entities are not exportable by features (Sibling Issue)
-; http://drupal.org/node/2192391
-projects[file_entity][patch][2192391] = "http://drupal.org/files/issues/file_entity_remove_file_display-2192391-01.patch"
-
-projects[file_entity_link][version] = "1.0-alpha3"
-projects[file_entity_link][type] = "module"
-projects[file_entity_link][subdir] = "contrib"
-
 projects[focal_point][version] = "1.0-alpha1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"

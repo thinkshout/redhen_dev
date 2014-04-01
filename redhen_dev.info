@@ -57,4 +57,24 @@ dependencies[] = salesforce_soap
 ; features
 dependencies[] = redhen_demo
 
+; df
+dependencies[] = ember_support
+dependencies[] = navbar
+dependencies[] = ckeditor
+dependencies[] = date
+dependencies[] = edit
+dependencies[] = ember_support
+dependencies[] = escape_admin
+dependencies[] = fape
+dependencies[] = focal_point
+dependencies[] = gripbuilder
+dependencies[] = iib
+dependencies[] = json2
+dependencies[] = manualcrop
+dependencies[] = module_filter
+dependencies[] = picture
+dependencies[] = purr_message
+dependencies[] = responsive_preview
+dependencies[] = views_bulk_operations
+
 files[] = redhen_dev.profile
