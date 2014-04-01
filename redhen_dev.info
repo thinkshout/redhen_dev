@@ -57,7 +57,4 @@ dependencies[] = salesforce_soap
 ; features
 dependencies[] = redhen_demo
 
-; df
-dependencies[] = ember_support
-
 files[] = redhen_dev.profile
