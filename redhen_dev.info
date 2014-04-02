@@ -10,6 +10,7 @@ dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_ui
 dependencies[] = list
+dependencies[] = number
 
 ; contrib
 dependencies[] = addressfield
@@ -22,6 +23,7 @@ dependencies[] = entityreference
 dependencies[] = entity_token
 dependencies[] = relation
 dependencies[] = registration
+dependencies[] = registration_views
 dependencies[] = registration_waitlist
 dependencies[] = registration_entity_access
 dependencies[] = entityreference
@@ -38,6 +40,7 @@ dependencies[] = rules_admin
 ; redhen
 dependencies[] = redhen
 dependencies[] = redhen_contact
+dependencies[] = redhen_dedupe
 dependencies[] = redhen_org
 dependencies[] = redhen_org_group
 dependencies[] = redhen_relation
@@ -68,7 +71,9 @@ dependencies[] = fape
 dependencies[] = focal_point
 dependencies[] = gridbuilder
 dependencies[] = iib
+dependencies[] = jquery_update
 dependencies[] = json2
+dependencies[] = link
 dependencies[] = manualcrop
 dependencies[] = module_filter
 dependencies[] = picture
