@@ -65,7 +65,6 @@ dependencies[] = navbar
 dependencies[] = ckeditor
 dependencies[] = date
 dependencies[] = edit
-dependencies[] = ember_support
 dependencies[] = escape_admin
 dependencies[] = fape
 dependencies[] = focal_point
