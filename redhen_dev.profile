@@ -23,7 +23,7 @@ function redhen_dev_navbar() {
       '#options' => array(
         'attributes' => array(
           'title' => t('RedHen CRM'),
-          'class' => array('navbar-icon', 'navbar-icon-menu',),
+          'class' => array('navbar-icon', 'navbar-icon-people',),
         ),
       ),
     ),
@@ -32,7 +32,7 @@ function redhen_dev_navbar() {
       'navbar_administration' => array(
         '#type' => 'container',
         '#attributes' => array(
-          'class' => array('menu', 'navbar-menu-user'),
+          'class' => array('navbar-menu-user'),
         ),
         'administration_menu' => menu_tree_output($tree),
       ),
