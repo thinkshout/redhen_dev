@@ -36,11 +36,17 @@ dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = rules
 dependencies[] = rules_admin
+dependencies[] = commerce_checkout
+dependencies[] = commerce_product
+dependencies[] = commerce_recurring
+dependencies[] = commerce_cardonfile
+dependencies[] = select_or_other
 
 ; redhen
 dependencies[] = redhen
 dependencies[] = redhen_contact
 dependencies[] = redhen_dedupe
+dependencies[] = redhen_donation
 dependencies[] = redhen_org
 dependencies[] = redhen_org_group
 dependencies[] = redhen_relation
@@ -60,7 +66,6 @@ dependencies[] = salesforce_soap
 dependencies[] = redhen_demo
 
 ; df
-dependencies[] = ember_support
 dependencies[] = navbar
 dependencies[] = ckeditor
 dependencies[] = date

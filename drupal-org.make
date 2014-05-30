@@ -44,6 +44,22 @@ projects[redhen_membership][download][url] = "git@git.drupal.org:project/redhen_
 projects[redhen_membership][download][branch] = "7.x-1.x"
 projects[redhen_membership][subdir] = "redhen"
 
+projects[redhen_donation][type] = "module"
+projects[redhen_donation][download][type] = "git"
+projects[redhen_donation][download][url] = "git@git.drupal.org:project/redhen_donation.git"
+projects[redhen_donation][download][branch] = "7.x-1.x"
+projects[redhen_donation][subdir] = "redhen"
+
+; redhen donation needs
+projects[] = commerce_checkout
+projects[] = commerce_product
+projects[] = commerce_recurring
+projects[] = commerce_cardonfile
+projects[] = select_or_other
+projects[commerce_recurring][patch][2273443] = "https://drupal.org/files/issues/commerce_recurring-custom_order_types-2273443-1.patch"
+projects[commerce_recurring][patch][2263371] = "https://drupal.org/files/issues/commerce_recurring-Alter_recurring_price-2263371-1.patch"
+projects[commerce_cardonfile][patch][2275263] = "https://drupal.org/files/issues/commerce_cardonfile-Returned_method_should_only_expect_FALSE-2275263-1.patch"
+
 ; themes
 projects[zen][version] = 5.4
 projects[zen][subdir] = ""
