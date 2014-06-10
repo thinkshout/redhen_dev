@@ -20,8 +20,8 @@ projects[] = token
 projects[] = views
 projects[] = rules
 
-projects[entity][version] = 1.4
-projects[relation][version] = 1.0-rc4
+projects[entity][version] = 1.5
+projects[relation][version] = 1.0-rc5
 projects[message][version] = 1.9
 projects[libraries][version] = 2.2
 
