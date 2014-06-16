@@ -87,7 +87,8 @@ function redhen_dev_create_contacts($bundles, $number = 100) {
         'type' => $bundle,
         'first_name' => $first_name,
         'middle_name' => $i % 2 ? '' : random_data_first_name(),
-        'last_name' => random_data_last_name()
+        'last_name' => random_data_last_name(),
+        'author_uid' => 1,
       );
     }
     $contact = new RedhenContact($contact_values);
@@ -122,7 +123,6 @@ function redhen_dev_create_orgs() {
     $bundle = $organization['type'];
     if ($bundle == 'foundation' || $bundle == 'shelter') {
       $org = new RedhenOrg(array(
-        'name' => redhen_org_machine_name($organization['name']),
         'type' => $bundle,
         'label' => $organization['name'],
       ));
