@@ -71,7 +71,7 @@ projects[poultry][subdir] = ""
 projects[salesforce][type] = "module"
 projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
-projects[salesforce][download][branch] = "7.x-3.0-beta5-release-prep"
+projects[salesforce][download][branch] = "7.x-3.0"
 projects[salesforce][subdir] = "salesforce"
 
 ; PHP ToolKit
