@@ -49,13 +49,13 @@ projects[redhen_donation][download][url] = "git@git.drupal.org:project/redhen_do
 projects[redhen_donation][download][branch] = "7.x-1.x"
 projects[redhen_donation][subdir] = "redhen"
 
-projects[commerce]
-projects[commerce_recurring]
+projects[commerce][version] = 1.9
+projects[commerce_recurring][version] = 2.x-dev 
 projects[commerce_recurring][patch][] = "https://drupal.org/files/issues/commerce_recurring-custom_order_types-2273443-1.patch"
 projects[commerce_recurring][patch][] = "https://drupal.org/files/issues/commerce_recurring-Alter_recurring_price-2263371-1.patch"
-projects[commerce_cardonfile]
+projects[commerce_cardonfile][version] = 2.0-beta4
 projects[commerce_cardonfile][patch][] = "https://drupal.org/files/issues/commerce_cardonfile-Returned_method_should_only_expect_FALSE-2275263-1.patch"
-projects[select_or_other]
+projects[select_or_other][version] = 2.20
 
 ; themes
 projects[zen][version] = 5.x-dev
