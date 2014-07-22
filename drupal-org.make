@@ -102,7 +102,7 @@ libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
 libraries[leaflet_markercluster][destination] = "libraries"
 
 
-projects[breakpoints][version] = "1.1"
+projects[breakpoints][version] = "1.2"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
