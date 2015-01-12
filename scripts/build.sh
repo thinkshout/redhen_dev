@@ -117,14 +117,14 @@ drush make drupal-org-core.make $TEMP_BUILD
 echo -n "Moving to destination... "
 cp -r tmp $TEMP_BUILD/profiles/$PROJECT
 rm -rf tmp
-cp -r $PROJECT.* $TEMP_BUILD/profiles/$PROJECT
+cp -r . $TEMP_BUILD/profiles/$PROJECT
 mv $TEMP_BUILD $DESTINATION
 
 # run the install profile
 if [ $DBUSER  ] && [ $DBPASS ] && [ $DB ] ; then
   cd $DESTINATION
   echo "Running install profile"
-  drush si $PROJECT --site-name="RedHen Sandbox" --db-url=mysql://$DBUSER:$DBPASS@localhost/$DB -y
+  drush si $PROJECT --site-name="RedHen Demo" --db-url=mysql://$DBUSER:$DBPASS@localhost/$DB -y
 else
   echo "Skipping install profile"
 fi

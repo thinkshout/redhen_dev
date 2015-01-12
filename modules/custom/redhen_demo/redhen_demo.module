@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Code for the redhen_demo feature.
+ */
+
+include_once 'redhen_demo.features.inc';
+
+/**
+ * Implements hook_user_view().
+ */
+function redhen_demo_user_view($account, $view_mode, $langcode) {
+  $contact = redhen_contact_load_by_user($account);
+  if ($contact) {
+    if ($contact->engagement_score > 100) {
+      drupal_set_message('Thank you for supporting our organization!');
+    }
+  }
+}

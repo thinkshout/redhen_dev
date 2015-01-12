@@ -1,3 +1,8 @@
 drupal
 .DS_Store
 .idea
+libraries
+modules/contrib
+modules/salesforce
+modules/redhen
+themes
