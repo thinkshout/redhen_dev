@@ -19,17 +19,8 @@ projects[] = leaflet_markercluster
 projects[] = token
 projects[] = views
 projects[] = rules
-<<<<<<< HEAD
-projects[] = entityreference
-projects[] = features
-
-projects[entity][version] = 1.3
-projects[relation][version] = 1.0-rc4
-=======
-
 projects[entity][version] = 1.5
 projects[relation][version] = 1.0-rc6
->>>>>>> df
 projects[message][version] = 1.9
 projects[libraries][version] = 2.2
 
