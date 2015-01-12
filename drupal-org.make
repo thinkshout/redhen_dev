@@ -21,7 +21,7 @@ projects[] = views
 projects[] = rules
 
 projects[entity][version] = 1.5
-projects[relation][version] = 1.0-rc5
+projects[relation][version] = 1.0-rc6
 projects[message][version] = 1.9
 projects[libraries][version] = 2.2
 
@@ -102,7 +102,7 @@ libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
 libraries[leaflet_markercluster][destination] = "libraries"
 
 
-projects[breakpoints][version] = "1.2"
+projects[breakpoints][version] = "1.3"
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
 
@@ -110,15 +110,15 @@ projects[ember_support][version] = "1.0-alpha1"
 projects[ember_support][type] = "module"
 projects[ember_support][subdir] = "contrib"
 
-projects[escape_admin][version] = "1.1"
+projects[escape_admin][version] = "1.2"
 projects[escape_admin][type] = "module"
 projects[escape_admin][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.3"
+projects[jquery_update][version] = "2.4"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 
@@ -203,7 +203,7 @@ projects[ckeditor][patch][1504696] = "http://drupal.org/files/issues/ckeditor-ac
 ; http://drupal.org/comment/8284591
 projects[ckeditor][patch][2158741] = "http://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-8-alt.patch"
 
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
@@ -222,7 +222,7 @@ projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-but
 projects[edit][patch][2015295-6] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
 projects[edit][patch][2015295-22] = "http://drupal.org/files/issues/edit-views-pseudo-fields-title-2015295-22.patch"
 
-projects[focal_point][version] = "1.0-alpha1"
+projects[focal_point][version] = "1.0-beta1"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
