@@ -5,7 +5,12 @@ core = 7.x
 defaults[projects][subdir] = "contrib"
 
 ; Standard Contrib Modules
-projects[] = addressfield
+; temporary change to specific addressfield version with patch to avoid build issues.
+; projects[] = addressfield
+projects[addressfield][version] = 1.0
+projects[addressfield][type] = module
+projects[addressfield][subdir] = contrib
+projects[addressfield][patch][] = "https://www.drupal.org/files/issues/devel_generate_function_call.patch"
 projects[] = ctools
 projects[] = devel
 projects[] = entitycache
