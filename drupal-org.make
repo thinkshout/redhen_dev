@@ -5,7 +5,12 @@ core = 7.x
 defaults[projects][subdir] = "contrib"
 
 ; Standard Contrib Modules
-projects[] = addressfield
+; temporary change to specific addressfield version with patch to avoid build issues.
+; projects[] = addressfield
+projects[addressfield][version] = 1.0
+projects[addressfield][type] = module
+projects[addressfield][subdir] = contrib
+projects[addressfield][patch][] = "https://www.drupal.org/files/issues/devel_generate_function_call.patch"
 projects[] = ctools
 projects[] = devel
 projects[] = entitycache
@@ -79,7 +84,7 @@ projects[poultry][subdir] = ""
 projects[salesforce][type] = "module"
 projects[salesforce][download][type] = "git"
 projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
-projects[salesforce][download][branch] = "7.x-3.0"
+projects[salesforce][download][branch] = "7.x-3.x"
 projects[salesforce][subdir] = "salesforce"
 
 ; PHP ToolKit
