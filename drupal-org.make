@@ -5,12 +5,7 @@ core = 7.x
 defaults[projects][subdir] = "contrib"
 
 ; Standard Contrib Modules
-; temporary change to specific addressfield version with patch to avoid build issues.
-; projects[] = addressfield
-projects[addressfield][version] = 1.0
-projects[addressfield][type] = module
-projects[addressfield][subdir] = contrib
-projects[addressfield][patch][] = "https://www.drupal.org/files/issues/devel_generate_function_call.patch"
+projects[] = addressfield
 projects[] = ctools
 projects[] = devel
 projects[] = entitycache
@@ -25,8 +20,8 @@ projects[] = token
 projects[] = views
 projects[] = rules
 projects[entity][version] = 1.6
-projects[relation][version] = 1.0-rc6
-projects[message][version] = 1.9
+projects[relation][version] = 1.0-rc7
+projects[message][version] = 1.10
 projects[libraries][version] = 2.2
 
 ; Modules we want to checkout to work on
@@ -118,7 +113,7 @@ projects[escape_admin][version] = "1.2"
 projects[escape_admin][type] = "module"
 projects[escape_admin][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.4"
+projects[jquery_update][version] = "2.6"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -136,7 +131,7 @@ projects[migrate_extras][subdir] = "contrib"
 projects[migrate_extras][patch][1870886] = "http://drupal.org/files/migrate_extras-2.5-add_support_for_uuid-1870886-4-do-not-test.patch"
 projects[migrate_extras][patch][2026003] = "http://drupal.org/files/color_field_migrate_support.patch"
 
-projects[module_filter][version] = "2.0-alpha2"
+projects[module_filter][version] = "2.0"
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 
@@ -186,7 +181,7 @@ projects[picture][download][type] = "git"
 projects[picture][download][revision] = "3d9fe6c"
 projects[picture][download][branch] = "7.x-1.x"
 
-projects[views_bulk_operations][version] = "3.2"
+projects[views_bulk_operations][version] = "3.3"
 projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
 
@@ -226,7 +221,7 @@ projects[edit][patch][1994256] = "http://drupal.org/files/issues/edit-navbar-but
 projects[edit][patch][2015295-6] = "http://drupal.org/files/edit-views-psuedo-fields-2015295-6.patch"
 projects[edit][patch][2015295-22] = "http://drupal.org/files/issues/edit-views-pseudo-fields-title-2015295-22.patch"
 
-projects[focal_point][version] = "1.0-beta1"
+projects[focal_point][version] = "1.0-beta4"
 projects[focal_point][type] = "module"
 projects[focal_point][subdir] = "contrib"
 
@@ -244,7 +239,7 @@ projects[xautoload][version] = "2.7"
 projects[xautoload][type] = "module"
 projects[xautoload][subdir] = "contrib"
 
-projects[manualcrop][version] = "1.4"
+projects[manualcrop][version] = "1.5"
 projects[manualcrop][type] = "module"
 projects[manualcrop][subdir] = "contrib"
 
