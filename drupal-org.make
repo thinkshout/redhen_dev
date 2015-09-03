@@ -90,7 +90,7 @@ libraries[salesforce][destination] = "libraries"
 
 ; Leaflet
 libraries[leaflet][download][type] = "get"
-libraries[leaflet][download][url] = "http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.1.zip"
+libraries[leaflet][download][url] = "http://cdn.leafletjs.com/downloads/leaflet-0.7.5.zip"
 libraries[leaflet][directory_name] = "leaflet"
 libraries[leaflet][destination] = "libraries"
 
