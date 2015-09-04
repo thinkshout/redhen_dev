@@ -12,9 +12,10 @@ function redhen_demo_default_rules_configuration() {
   $items['rules_comment_engagement'] = entity_import('rules_config', '{ "rules_comment_engagement" : {
       "LABEL" : "Comment engagement",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "redhen" ],
       "REQUIRES" : [ "rules", "redhen_engagement", "comment" ],
-      "ON" : [ "comment_insert" ],
+      "ON" : { "comment_insert" : [] },
       "DO" : [
         { "score_engagement_by_mail" : {
             "scores" : { "value" : { "comment" : "comment" } },
@@ -28,9 +29,10 @@ function redhen_demo_default_rules_configuration() {
   $items['rules_event_registration'] = entity_import('rules_config', '{ "rules_event_registration" : {
       "LABEL" : "Event registration",
       "PLUGIN" : "reaction rule",
+      "OWNER" : "rules",
       "TAGS" : [ "redhen" ],
       "REQUIRES" : [ "rules", "redhen_engagement", "registration" ],
-      "ON" : [ "registration_insert" ],
+      "ON" : { "registration_insert" : [] },
       "DO" : [
         { "score_engagement_by_mail" : {
             "scores" : { "value" : { "event_registration" : "event_registration" } },

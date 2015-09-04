@@ -19,14 +19,6 @@ function redhen_demo_field_default_field_bases() {
       0 => 'node',
     ),
     'field_name' => 'body',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -46,7 +38,6 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_address',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'addressfield',
@@ -62,11 +53,45 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_coordinates',
-    'foreign keys' => array(),
-    'indexes' => array(),
+    'indexes' => array(
+      'bbox' => array(
+        0 => 'top',
+        1 => 'bottom',
+        2 => 'left',
+        3 => 'right',
+      ),
+      'bottom' => array(
+        0 => 'bottom',
+      ),
+      'centroid' => array(
+        0 => 'lat',
+        1 => 'lon',
+      ),
+      'geohash' => array(
+        0 => 'geohash',
+      ),
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'left' => array(
+        0 => 'left',
+      ),
+      'lon' => array(
+        0 => 'lon',
+      ),
+      'right' => array(
+        0 => 'right',
+      ),
+      'top' => array(
+        0 => 'top',
+      ),
+    ),
     'locked' => 0,
     'module' => 'geofield',
-    'settings' => array(),
+    'settings' => array(
+      'backend' => 'default',
+      'srid' => 4326,
+    ),
     'translatable' => 0,
     'type' => 'geofield',
   );
@@ -78,7 +103,6 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_meal_preference',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -105,14 +129,6 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_name',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -134,14 +150,6 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_registration',
-    'foreign keys' => array(
-      'registration_type' => array(
-        'columns' => array(
-          'registration_type' => 'name',
-        ),
-        'table' => 'registration_type',
-      ),
-    ),
     'indexes' => array(
       'registration_type' => array(
         0 => 'registration_type',
@@ -161,7 +169,6 @@ function redhen_demo_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'redhen_contact_email',
-    'foreign keys' => array(),
     'indexes' => array(
       'redhen_email_address' => array(
         0 => 'value',

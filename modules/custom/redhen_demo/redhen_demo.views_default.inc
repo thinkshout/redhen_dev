@@ -34,26 +34,6 @@ function redhen_demo_views_default_views() {
   $handler->display->display_options['style_options']['name_field'] = 'full_name';
   $handler->display->display_options['style_options']['description_field'] = 'full_name';
   $handler->display->display_options['style_options']['map'] = 'OSM Mapnik';
-  $handler->display->display_options['style_options']['icon'] = array(
-    'iconUrl' => '',
-    'shadowUrl' => '',
-    'iconSize' => array(
-      'x' => '',
-      'y' => '',
-    ),
-    'iconAnchor' => array(
-      'x' => '',
-      'y' => '',
-    ),
-    'shadowAnchor' => array(
-      'x' => '',
-      'y' => '',
-    ),
-    'popupAnchor' => array(
-      'x' => '',
-      'y' => '',
-    ),
-  );
   /* Relationship: Engagement: Contact contact_id */
   $handler->display->display_options['relationships']['contact']['id'] = 'contact';
   $handler->display->display_options['relationships']['contact']['table'] = 'redhen_engagement';

@@ -25,6 +25,7 @@ function redhen_demo_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
 
@@ -149,8 +150,9 @@ function redhen_demo_default_registration_type() {
     "name" : "demo_registration",
     "label" : "Demo registration",
     "locked" : "0",
-    "weight" : "0",
-    "data" : null
+    "default_state" : null,
+    "data" : null,
+    "weight" : "0"
   }');
   return $items;
 }

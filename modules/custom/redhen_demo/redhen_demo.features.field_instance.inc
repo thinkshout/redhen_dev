@@ -67,7 +67,7 @@ function redhen_demo_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'registration',
+        'module' => NULL,
         'settings' => array(
           'label' => ' ',
         ),
@@ -241,6 +241,7 @@ function redhen_demo_field_default_field_instances() {
         'available_countries' => array(
           'US' => 'US',
         ),
+        'default_country' => 'site_default',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-country' => 'address-hide-country',
@@ -288,6 +289,23 @@ function redhen_demo_field_default_field_instances() {
           ),
           'leaflet_map' => 'OSM Mapnik',
           'popup' => 0,
+          'vector_display' => array(
+            'clickable' => 1,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 1,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 1,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => '',
+            'maxZoom' => 19,
+            'minZoom' => 1,
+          ),
         ),
         'type' => 'geofield_leaflet',
         'weight' => 2,
@@ -371,7 +389,8 @@ function redhen_demo_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'registration-demo_registration-field_meal_preference'
+  // Exported field_instance:
+  // 'registration-demo_registration-field_meal_preference'
   $field_instances['registration-demo_registration-field_meal_preference'] = array(
     'bundle' => 'demo_registration',
     'default_value' => NULL,
