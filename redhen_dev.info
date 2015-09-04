@@ -66,23 +66,14 @@ dependencies[] = salesforce_soap
 ; features
 dependencies[] = redhen_demo
 
-; df
 dependencies[] = navbar
+dependencies[] = navbar_flush_cache
 dependencies[] = ckeditor
 dependencies[] = date
-dependencies[] = edit
 dependencies[] = escape_admin
-dependencies[] = fape
-dependencies[] = focal_point
-dependencies[] = gridbuilder
-dependencies[] = iib
 dependencies[] = jquery_update
-dependencies[] = json2
 dependencies[] = link
-dependencies[] = manualcrop
 dependencies[] = module_filter
-dependencies[] = picture
-dependencies[] = purr_messages
 dependencies[] = responsive_preview
 dependencies[] = views_bulk_operations
 
