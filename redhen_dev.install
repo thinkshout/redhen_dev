@@ -11,7 +11,7 @@ module_load_include('inc', 'devel_generate');
  * Implements hook_install().
  */
 function redhen_dev_install() {
-  include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
+  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
 
   // Enable the admin theme.
   db_update('system')
@@ -20,10 +20,10 @@ function redhen_dev_install() {
     ->condition('name', 'ember')
     ->execute();
   variable_set('admin_theme', 'ember');
-  variable_set('theme_default', 'ember');
+  variable_set('theme_default', 'bartik');
   variable_set('node_admin_theme', '1');
 
-  minimal_install();
+  standard_install();
 
   variable_set('redhen_contact_connect_users', TRUE);
 
@@ -35,11 +35,7 @@ function redhen_dev_install() {
 
   redhen_dev_create_contacts(array('staff', 'management', 'volunteer'));
 
-  redhen_dev_registration_setup();
-
   node_access_rebuild(TRUE);
-
-  redhen_dev_salesforce_setup();
 }
 
 /**
@@ -141,20 +137,6 @@ function redhen_dev_create_note_type_terms() {
 }
 
 /**
- * Setup redhen registration stuff.
- */
-function redhen_dev_registration_setup() {
-  $node = new stdClass();
-  $node->type = 'event';
-  node_object_prepare($node);
-  $node->title = 'Test Event';
-  $node->body = devel_create_content();
-  $node->uid = 1;
-  $node->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'demo_registration';
-  node_save($node);
-}
-
-/**
  * Return engagement scores used in this demo.
  */
 function redhen_dev_test_engagement_scores() {
@@ -162,14 +144,6 @@ function redhen_dev_test_engagement_scores() {
     'event_registration' => 'Event registration',
     'comment' => 'Comment',
   );
-}
-
-/**
- * Salesforce setup.
- */
-function redhen_dev_salesforce_setup() {
-  variable_set('salesforce_consumer_key', '3MVG9yZ.WNe6byQC3METjuPMZE3WAccPtT7ythFkEY3D8OlaRg7HmDL98zACwJBX7iYP9AGNpuzD2rHt0RAoD');
-  variable_set('salesforce_consumer_secret', '7241637589953999446');
 }
 
 /**
