@@ -15,16 +15,7 @@ function redhen_demo_views_api($module = NULL, $api = NULL) {
  * Implements hook_node_info().
  */
 function redhen_demo_node_info() {
-  $items = array(
-    'event' => array(
-      'name' => t('Event'),
-      'base' => 'node_content',
-      'description' => '',
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
+  $items = array();
   return $items;
 }
 
@@ -133,21 +124,6 @@ function redhen_demo_default_redhen_org_type() {
   $items['shelter'] = entity_import('redhen_org_type', '{
     "name" : "shelter",
     "label" : "Shelter",
-    "locked" : "0",
-    "weight" : "0",
-    "data" : null
-  }');
-  return $items;
-}
-
-/**
- * Implements hook_default_registration_type().
- */
-function redhen_demo_default_registration_type() {
-  $items = array();
-  $items['demo_registration'] = entity_import('registration_type', '{
-    "name" : "demo_registration",
-    "label" : "Demo registration",
     "locked" : "0",
     "weight" : "0",
     "data" : null
