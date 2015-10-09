@@ -81,6 +81,6 @@ projects[adminimal_admin_menu][subdir] = "contrib"
 ; Libraries
 
 ; Themes
-projects[adminimal][version] = "1.22"
-projects[adminimal][type] = "theme"
-projects[adminimal][subdir] = "contrib"
+projects[adminimal_theme][version] = "1.22"
+projects[adminimal_theme][type] = "theme"
+projects[adminimal_theme][subdir] = "contrib"
