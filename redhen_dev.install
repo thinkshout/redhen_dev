@@ -22,6 +22,7 @@ function redhen_dev_install() {
   variable_set('admin_theme', 'adminimal');
   variable_set('theme_default', 'bartik');
   variable_set('node_admin_theme', '1');
+  variable_set('redhen_admin_path', '1');
 
   standard_install();
 
