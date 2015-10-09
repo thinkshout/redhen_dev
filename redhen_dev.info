@@ -9,8 +9,10 @@ dependencies[] = menu
 dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_ui
+dependencies[] = image
 dependencies[] = list
 dependencies[] = number
+dependencies[] = rdf
 
 ; contrib
 dependencies[] = addressfield
@@ -22,16 +24,9 @@ dependencies[] = entitycache
 dependencies[] = entityreference
 dependencies[] = entity_token
 dependencies[] = relation
-dependencies[] = registration
-dependencies[] = registration_views
-dependencies[] = registration_waitlist
-dependencies[] = registration_entity_access
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = message
-dependencies[] = leaflet
-dependencies[] = leaflet_views
-dependencies[] = leaflet_markercluster
 dependencies[] = libraries
 dependencies[] = views
 dependencies[] = views_ui
@@ -41,6 +36,7 @@ dependencies[] = commerce_checkout
 dependencies[] = commerce_product
 dependencies[] = commerce_recurring
 dependencies[] = commerce_cardonfile
+dependencies[] = commerce_payment_example
 dependencies[] = select_or_other
 
 ; redhen
@@ -57,33 +53,13 @@ dependencies[] = redhen_engagement
 dependencies[] = redhen_registration
 dependencies[] = redhen_activity
 
-; salesforce
-dependencies[] = salesforce_mapping
-dependencies[] = salesforce_push
-dependencies[] = salesforce_pull
-dependencies[] = salesforce_soap
-
 ; features
 dependencies[] = redhen_demo
 
-; df
-dependencies[] = navbar
-dependencies[] = ckeditor
+; UX
 dependencies[] = date
-dependencies[] = edit
-dependencies[] = escape_admin
-dependencies[] = fape
-dependencies[] = focal_point
-dependencies[] = gridbuilder
-dependencies[] = iib
 dependencies[] = jquery_update
-dependencies[] = json2
-dependencies[] = link
-dependencies[] = manualcrop
 dependencies[] = module_filter
-dependencies[] = picture
-dependencies[] = purr_messages
-dependencies[] = responsive_preview
-dependencies[] = views_bulk_operations
+dependencies[] = admin_menu
 
 files[] = redhen_dev.profile
