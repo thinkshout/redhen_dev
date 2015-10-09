@@ -61,5 +61,6 @@ dependencies[] = date
 dependencies[] = jquery_update
 dependencies[] = module_filter
 dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
 
 files[] = redhen_dev.profile
