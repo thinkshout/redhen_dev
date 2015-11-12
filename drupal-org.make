@@ -39,6 +39,12 @@ projects[redhen_donation][download][url] = "git@git.drupal.org:project/redhen_do
 projects[redhen_donation][download][branch] = "7.x-1.x"
 projects[redhen_donation][subdir] = "redhen"
 
+; salesforce
+projects[salesforce][type] = "module"
+projects[salesforce][download][type] = "git"
+projects[salesforce][download][url] = "git@git.drupal.org:project/salesforce.git"
+projects[salesforce][download][branch] = "7.x-3.x"
+
 ; redhen donation needs
 projects[] = commerce
 projects[] = select_or_other
@@ -55,7 +61,7 @@ projects[commerce_cardonfile][type] = module
 projects[commerce_cardonfile][subdir] = contrib
 projects[commerce_cardonfile][patch][2275263] = "https://drupal.org/files/issues/commerce_cardonfile-Returned_method_should_only_expect_FALSE-2275263-1.patch"
 
-projects[jquery_update][version] = "3.0-alpha2"
+projects[jquery_update][version] = "3.0-alpha3"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -70,7 +76,7 @@ projects[field_group][download][type] = "git"
 projects[field_group][download][revision] = "9cdde2b"
 projects[field_group][download][branch] = "7.x-1.x"
 
-projects[date][version] = "2.8"
+projects[date][version] = "2.9"
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 
@@ -81,6 +87,6 @@ projects[adminimal_admin_menu][subdir] = "contrib"
 ; Libraries
 
 ; Themes
-projects[adminimal_theme][version] = "1.22"
+projects[adminimal_theme][version] = "1.23"
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
