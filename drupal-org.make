@@ -22,6 +22,10 @@ projects[] = rules
 projects[entity][version] = 1.6
 projects[relation][version] = 1.0-rc7
 projects[message][version] = 1.10
+; Set mid field in message table as "'not null' => TRUE" - resolves fatal
+; database error on install: "exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1171 All parts of a PRIMARY KEY   [error] must be NOT NULL; if you need NULL in a key, use UNIQUE instead'"
+; See https://www.drupal.org/node/2051751
+projects[message][patch][] = https://www.drupal.org/files/message-primary_nullable-2051751-7.patch
 projects[libraries][version] = 2.2
 
 ; Modules we want to checkout to work on
