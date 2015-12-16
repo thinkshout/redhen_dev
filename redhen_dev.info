@@ -62,6 +62,7 @@ dependencies[] = salesforce_mapping
 dependencies[] = salesforce_push
 dependencies[] = salesforce_pull
 dependencies[] = salesforce_soap
+dependencies[] = queue_ui
 
 ; features
 dependencies[] = redhen_demo
