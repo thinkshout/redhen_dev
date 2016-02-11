@@ -21,7 +21,7 @@ if [ ! -d web/sites/default/files ]
 fi
 
 # Instal Drupal!
-cd web;drush si --site-name="d8party" --db-url=mysql://root:root@localhost/d8party -y;cd ../
+cd web;drush si --site-name="redhen8" --db-url=mysql://root:root@localhost/redhen8 -y;cd ../
 
 # Make the settings files writable
 chmod 777 web/sites/default/s*;
@@ -33,7 +33,7 @@ fi
 
 # Add the trusted host pattern
 echo "\$config_directories['sync'] = '../configs';" >> web/sites/default/settings.php
-echo "\$settings['trusted_host_patterns'] = array('d8party\.dev$',);" >> web/sites/default/settings.php
+echo "\$settings['trusted_host_patterns'] = array('redhen8\.dev$',);" >> web/sites/default/settings.php
 
 # fix permissions
 chmod 444 web/sites/default/s*
