@@ -1,8 +1,8 @@
 drupal
 .DS_Store
 .idea
-libraries
-modules/contrib
-modules/salesforce
-modules/redhen
-themes
+web/core/
+web/modules/contrib/
+web/sites/default
+vendor
+composer.lock
