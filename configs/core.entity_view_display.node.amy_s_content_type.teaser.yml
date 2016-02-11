@@ -1,0 +1,26 @@
+uuid: bbf17b16-73e1-40bd-9509-9e419e396cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.amy_s_content_type.body
+    - node.type.amy_s_content_type
+  module:
+    - text
+    - user
+id: node.amy_s_content_type.teaser
+targetEntityType: node
+bundle: amy_s_content_type
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

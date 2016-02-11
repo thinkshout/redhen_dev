@@ -1,0 +1,22 @@
+uuid: d4d0ba3b-9b59-46e0-8100-bd953752e37f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.amy_s_content_type
+  module:
+    - text
+id: node.amy_s_content_type.body
+field_name: body
+entity_type: node
+bundle: amy_s_content_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

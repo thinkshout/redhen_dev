@@ -1,0 +1,23 @@
+uuid: 59d427d1-85b9-4d54-8909-9e571f5703bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_you_love_it_
+    - node.type.gabe_s_second_type
+id: node.gabe_s_second_type.field_do_you_love_it_
+field_name: field_do_you_love_it_
+entity_type: node
+bundle: gabe_s_second_type
+label: 'Do you love it?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

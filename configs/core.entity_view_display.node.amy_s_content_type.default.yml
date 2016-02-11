@@ -1,0 +1,24 @@
+uuid: 389bd8c6-a1e9-4c8a-be00-a8f2872eb8d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.amy_s_content_type.body
+    - node.type.amy_s_content_type
+  module:
+    - text
+    - user
+id: node.amy_s_content_type.default
+targetEntityType: node
+bundle: amy_s_content_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

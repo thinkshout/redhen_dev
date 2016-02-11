@@ -1,0 +1,23 @@
+uuid: 9273ed0e-ba16-4050-bb60-964053e1775c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_best_number
+    - node.type.gabe_s_content_type
+id: node.gabe_s_content_type.field_best_number
+field_name: field_best_number
+entity_type: node
+bundle: gabe_s_content_type
+label: 'Best Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

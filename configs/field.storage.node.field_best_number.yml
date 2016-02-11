@@ -1,0 +1,20 @@
+uuid: 795eca87-caa0-4023-8b18-245022b8a4b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_best_number
+field_name: field_best_number
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

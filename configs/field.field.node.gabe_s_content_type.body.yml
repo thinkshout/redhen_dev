@@ -1,0 +1,22 @@
+uuid: e86da07e-19bb-4655-ad00-cb4c97d20878
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gabe_s_content_type
+  module:
+    - text
+id: node.gabe_s_content_type.body
+field_name: body
+entity_type: node
+bundle: gabe_s_content_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
