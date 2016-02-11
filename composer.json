@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "git", 
+            "url": "https://git.drupal.org/project/redhen.git"
         }
     ],
     "require": {
@@ -21,7 +25,7 @@
         "drupal/core": "8.0.*",
         "drush/drush": "~8.0",
         "drupal/console": "~0.9",
-        "drupal/registration": "8.1.*@dev"
+        "drupal/redhen": "dev-8.x-1.x"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -40,6 +44,7 @@
     "extra": {
         "installer-paths": {
             "web/core": ["type:drupal-core"],
+            "web/modules/redhen/{$name}": ["name:drupal/redhen"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
