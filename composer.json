@@ -44,7 +44,7 @@
     "extra": {
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/modules/redhen/{$name}": ["name:drupal/redhen"],
+            "web/modules/working/{$name}": ["drupal/redhen"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
