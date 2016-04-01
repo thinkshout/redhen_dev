@@ -33,7 +33,7 @@ fi
 
 # Add the trusted host pattern
 echo "\$config_directories['sync'] = '../configs';" >> web/sites/default/settings.php
-echo "\$settings['trusted_host_patterns'] = array('redhen8\.dev$',);" >> web/sites/default/settings.php
+echo "\$settings['trusted_host_patterns'] = array('redhen8\.dv8$',);" >> web/sites/default/settings.php
 
 # fix permissions
 chmod 444 web/sites/default/s*
