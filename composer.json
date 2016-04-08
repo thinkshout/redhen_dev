@@ -15,8 +15,8 @@
             "url": "https://packagist.drupal-composer.org"
         },
         {
-            "type": "git", 
-            "url": "git@github.com:thinkshout/redhen.git"
+            "type": "git",
+            "url": "https://github.com/thinkshout/redhen.git"
         }
     ],
     "require": {
