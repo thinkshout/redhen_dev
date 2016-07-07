@@ -8,9 +8,17 @@ Add a vhosts entry for "redhen.dev" pointing to "Sites/redhen8/web"
 
 From "Sites", clone this repository into "redhen8".
 
+```bash
 cd ~/Sites/redhen8
-
 composer install
+```
+
+## Installing the Drupal site
+
+```bash
+ cd web
+ drush si config_installer
+ ```
 
 ### How can I apply patches to downloaded modules?
 
