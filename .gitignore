@@ -3,6 +3,8 @@ drupal
 .idea
 web/core/
 web/modules/contrib/
+web/profiles/contrib/
+web/modules/working/
 web/sites/default
 vendor
 composer.lock
