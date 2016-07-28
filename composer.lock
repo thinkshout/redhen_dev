@@ -826,16 +826,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.1.5",
+            "version": "8.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d"
+                "reference": "3870ff6a47e723e3dce857473329d2f143e88d93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d",
-                "reference": "5e4ee1266c741ace5df7c9b8ac3ba1b0d592ee9d",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/3870ff6a47e723e3dce857473329d2f143e88d93",
+                "reference": "3870ff6a47e723e3dce857473329d2f143e88d93",
                 "shasum": ""
             },
             "require": {
@@ -844,7 +844,7 @@
                 "doctrine/common": "2.5.*",
                 "easyrdf/easyrdf": "0.9.*",
                 "egulias/email-validator": "1.2.*",
-                "guzzlehttp/guzzle": "~6.1",
+                "guzzlehttp/guzzle": "~6.2",
                 "masterminds/html5": "~2.1",
                 "paragonie/random_compat": "~1.0",
                 "php": ">=5.5.9",
@@ -992,7 +992,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-07-07 09:38:59"
+            "time": "2016-07-18 15:01:43"
         },
         {
             "name": "drupal/entity",
@@ -1802,7 +1802,7 @@
             ],
             "authors": [
                 {
-                    "name": "Pádraic Brady",
+                    "name": "Padraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
@@ -1857,7 +1857,7 @@
             ],
             "authors": [
                 {
-                    "name": "Pádraic Brady",
+                    "name": "Padraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 }
