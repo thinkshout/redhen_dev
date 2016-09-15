@@ -1,15 +1,16 @@
-uuid: e2b14060-0d7c-47a0-a300-b6ef27750e9b
+uuid: 6545d5e9-51b8-4c74-9e83-2edbc73d5552
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
     - image
     - user
 _core:
-  default_config_hash: T2PsplcZ3qhzqgwW_aYCKQshCg_UQkSsKV45b03pEl4
+  default_config_hash: C3k_McOy8bL8rTnIjspy5OfFdgqV1z6OdGZaI-tO5eM
 id: user.user.compact
 targetEntityType: user
 bundle: user

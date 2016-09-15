@@ -1,4 +1,4 @@
-uuid: a5b3a164-81f3-4534-a600-a804279392dd
+uuid: 7eb92882-54cc-4f4e-9d95-fe263b80623e
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.large
     - node.type.article
   module:
     - comment
@@ -14,7 +15,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: U2wz8DHwt7udkLH2tR8sYEuAzDtG6Eb_jXdx2AIYDBg
+  default_config_hash: JtAg_-waIt1quMtdDtHIaXJMxvTuSmxW7bWyO6Zd68E
 id: node.article.default
 targetEntityType: node
 bundle: article
