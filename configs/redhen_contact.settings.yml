@@ -1,0 +1,10 @@
+unique_email: true
+connect_users: false
+embed_on_user_form: false
+alter_username: true
+registration: true
+registration_type: null
+registration_link: null
+registration_update: null
+_core:
+  default_config_hash: Ar3PGzrlzVw0YSLkU9_8KBiHffkNF30Ybt8TQCGvcCo
